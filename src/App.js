@@ -5,7 +5,9 @@ import WelcomeCL from './components/WelcomeCL';
 function App() {
   return (
     <div className="App">
-      <Welcome/>
+      <WelcomeCL name="fares"/>
+      <WelcomeCL name="fares"/>
+
     </div>
   );
 }
