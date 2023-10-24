@@ -27,6 +27,8 @@ constructor(props){
         </>
         );
     } 
+    //to change states of variables after making components 
+    
 componentDidMount(){
    
 }
