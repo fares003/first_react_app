@@ -8,6 +8,14 @@ constructor(props){
         lastName :"zakaria",
     
     }
+    this.changeName=this.changeName.bind(this);
+    //instead of arrow function
+}
+changeName(){
+    this.setState({
+        lastName:"abdo",
+    }
+    )
 }
     render(){
         return (
@@ -15,13 +23,7 @@ constructor(props){
 
         <h1>class component ,{this.props.name}</h1>
         <h6>created by {this.state.FirstName},{this.state.lastName}</h6>
-        <button onClick={()=>
- this.setState({
-    lastName :"abdo",
-}
-)
-
-        }>
+        <button onClick={this.changeName }>
             change my name
         </button>
         </>
